@@ -1,3 +1,14 @@
+/*
+Problem:  importing Gifs with GIFAnimation does not work
+//PImage[] allFrames = Gif.getPImages(this, "blobby.gif");
+
+
+
+myGif = new Gif(this, "blobby.gif");
+/\ this ling result in a syntax error where "The constructor "(Guy, String)" does not exist"
+It says this no matter where I imported this line
+*/
+
 import gifAnimation.*;
 
 class Guy {
