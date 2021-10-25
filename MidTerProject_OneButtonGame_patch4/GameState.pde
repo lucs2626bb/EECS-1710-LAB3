@@ -22,6 +22,7 @@ class GameState {
   }
 
   void end() {
+    msg = "";
     noStroke();
     colorMode(RGB);
     fill(255, 0, 0);
