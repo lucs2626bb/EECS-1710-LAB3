@@ -15,7 +15,7 @@ class Bees {
   float triggerClose = 50;
   float movementSpeed = 0.08;
   int scatterMargin = 10;
-  boolean debug = true;
+  boolean debug = false;
 
   Gif myGif;
   //Nick fox geig: Creature03  https://github.com/eecs17xx/eecs1710-2021f/blob/main/Week04/Creature03/Steve.pde
