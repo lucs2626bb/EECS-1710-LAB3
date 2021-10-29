@@ -75,7 +75,7 @@ class Bees {
 
     image(myGif, xBee, yBee, 32, 32);
 
-    if (debug) {
+    if (debug == true) {
       noFill();
       colorMode(RGB);
       stroke(240, 255, 240);
