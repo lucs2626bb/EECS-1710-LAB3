@@ -1,3 +1,8 @@
+/*
+Lucas Bellotto
+EECS 1710
+*/
+
 import processing.sound.*;
 SoundFile file;
 
@@ -67,23 +72,11 @@ void setup() {
       color col = img1.pixels[loc];
       //if (red(col) > 200) redVert.add(new PVector(x, y));
       //if (blue(col) > 200) blueEdge.add(new PVector(x, y));
-      if (blue(col) > 200) dots.add(new Dot(x, y, img1.pixels[loc]));
+      if (blue(col) > 200) dots.add(new Dot(x, y, img1.pixels[loc]));  //if there colour blue is > 200, add a new dot
       
     }
   }
 
-/*
-  for (int x = 0; x < img1.width; x += scaler) {
-    for (int y = 0; y < img1.height; y += scaler) {
-      int loc = x + y * width;
-      //dots.add(new Dot(x, y, img1.pixels[loc]));
-      color col = img1.pixels[loc];
-      //if (red(col) > 200) redVert.add(new PVector(x, y));
-      //if (blue(col) > 200) blueEdge.add(new PVector(x, y));
-      if (blue(col) > 200) dots.add(new Dot(x, y, img1.pixels[loc]));
-      
-    }
-  }
 
   for (int x = 0; x < img2.width; x += scaler) {
     for (int y = 0; y < img2.height; y += scaler) {
@@ -96,6 +89,7 @@ void setup() {
     }
   }
 
+/*
   for (int x = 0; x < img3.width; x += scaler) {
     for (int y = 0; y < img3.height; y += scaler) {
       int loc = x + y * width;
@@ -106,7 +100,8 @@ void setup() {
       if (blue(col) > 200) dots.add(new Dot(x, y, img1.pixels[loc]));
     }
   }
-
+*/
+/*
   for (int x = 0; x < img4.width; x += scaler) {
     for (int y = 0; y < img4.height; y += scaler) {
       int loc = x + y * width;
@@ -122,6 +117,7 @@ void setup() {
 }
 
 void pixelMap() {
+  
 }
 
 void draw() {
@@ -130,6 +126,7 @@ void draw() {
   for (Dot dot : dots) {
     dot.run();
     move.run();
+    pixelMap();
   }
   surface.setTitle("The Star Scholar");
 }
